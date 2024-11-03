@@ -2,6 +2,9 @@
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  // Enable React Strict Mode
+  reactStrictMode: true,
+
   webpack: (config, { isServer }) => {
     // Iterate through all module rules
     config.module.rules.forEach((rule) => {
